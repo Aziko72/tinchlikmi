@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tinchlikmi? — nima yangilik?</title>
+<meta name="description" content="Tinchlikmi? — dunyo va O‘zbekistondagi eng muhim yangiliklar: qisqa, aniq va tushunarli tilda. Shov-shuv emas, faktlar.">
+<meta name="theme-color" content="#07090D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tinchlikmi?">
+<meta property="og:title" content="Tinchlikmi? — nima yangilik?">
+<meta property="og:description" content="Dunyo va O‘zbekistondagi eng muhim yangiliklar — qisqa, aniq, tushunarli.">
+<meta property="og:image" content="https://yt3.googleusercontent.com/-IH6bF93zlX_X-OqVd11haUABM7Q3fYgnnu_3n_e6pQuSzLJToSZJK0qOgyich5DE5DcJwce=s512-c-k-c0x00ffffff-no-rj">
+<meta property="og:url" content="https://tinchlikmi.uz/">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="apple-touch-icon" href="https://yt3.googleusercontent.com/-IH6bF93zlX_X-OqVd11haUABM7Q3fYgnnu_3n_e6pQuSzLJToSZJK0qOgyich5DE5DcJwce=s180-c-k-c0x00ffffff-no-rj">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Asosiy qismga o‘tish</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#/" aria-label="Tinchlikmi? — bosh sahifa">
+      <img src="assets/logo.svg" alt="" width="52" height="52">
+      <span class="brand-name">TINCHLIKMI?</span>
+    </a>
+    <nav class="nav" aria-label="Asosiy menyu">
+      <a href="#/">Videolar</a>
+      <a href="#/haqida">Biz haqimizda</a>
+      <a class="btn-sub" href="https://www.youtube.com/@tinchlikm?sub_confirmation=1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+        Obuna bo‘lish
+      </a>
+    </nav>
+  </div>
+  <div class="ticker" aria-label="So‘nggi sarlavhalar">
+    <div class="ticker-label"><span class="dot"></span>JONLI</div>
+    <div class="ticker-track"><div class="ticker-move" id="ticker"></div></div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="view-home">
+    <div class="wrap">
+      <div class="kicker"><span class="dot"></span>SO‘NGGI XABAR <span class="kicker-date" id="today"></span></div>
+      <div id="hero"></div>
+      <div class="section-head">
+        <h2>Barcha videolar</h2>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>Hozircha bu yerda boshqa video yo‘q. Yangi videolar YouTube’da chiqishi bilan shu yerda paydo bo‘ladi.</p>
+    </div>
+  </section>
+
+  <section id="view-video" hidden>
+    <div class="wrap">
+      <a class="back" href="#/">← Barcha videolar</a>
+      <div class="player-frame">
+        <div class="player" id="player"></div>
+      </div>
+      <p class="player-note">Video ochilmasa, “YouTube’da ochish” tugmasini bosing.</p>
+      <div class="video-meta">
+        <div class="tag-row"><span class="tag">VIDEO</span><span class="date" id="v-date"></span></div>
+        <h1 id="v-title"></h1>
+        <div class="v-actions">
+          <a class="btn-yt" id="v-yt" target="_blank" rel="noopener">YouTube’da ochish</a>
+          <button class="btn-ghost" id="v-share" type="button">Havolani nusxalash</button>
+        </div>
+        <div class="desc" id="v-desc"></div>
+      </div>
+      <div class="section-head"><h2>Boshqa videolar</h2></div>
+      <div class="grid" id="grid-more"></div>
+    </div>
+  </section>
+
+  <section id="view-about" hidden>
+    <div class="wrap about">
+      <div class="about-brush"><span>TINCHLIKMI?</span></div>
+      <p class="about-sub">nima yangilik?</p>
+      <div class="about-text">
+        <p>Dunyoda nimalar bo‘lyapti? Urush va tinchlik, siyosat va iqtisod, narxlar va saylovlar, O‘zbekiston va butun dunyo — eng muhim yangiliklarni qisqa, aniq va tushunarli tilda yetkazamiz.</p>
+        <ul class="checks">
+          <li>Kunning asosiy yangiliklari</li>
+          <li>Xalqaro voqealar va ularning ortidagi sabablar</li>
+          <li>Iqtisodiyot: narxlar, valyuta, neft</li>
+          <li>Murakkab mavzular — oddiy tilda tahlil</li>
+        </ul>
+        <p>Biz shov-shuv emas, faktlarni ko‘rsatamiz. Har bir voqeani turli manbalardan solishtirib, xulosani o‘zingizga qoldiramiz. Tasdiqlanmagan xabarlar alohida belgilanadi.</p>
+        <a class="btn-sub big" href="https://www.youtube.com/@tinchlikm?sub_confirmation=1" target="_blank" rel="noopener">YouTube kanalga obuna bo‘lish</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand"><img src="assets/logo.svg" alt="" width="40" height="40"><span>TINCHLIKMI? — nima yangilik?</span></div>
+    <div class="foot-links">
+      <a href="#/">Videolar</a>
+      <a href="https://www.youtube.com/@tinchlikm" target="_blank" rel="noopener">YouTube</a>
+      <a href="#/haqida">Biz haqimizda</a>
+    </div>
+    <p class="foot-note">© <span id="year"></span> Tinchlikmi? · Videolar YouTube orqali ko‘rsatiladi.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
